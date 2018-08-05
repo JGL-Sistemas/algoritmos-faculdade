@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Js</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+        <script src="js/comp.js" type="text/javascript"></script>
+
+        <style>
+            *{
+              border: none;  
+            }
+            div{
+                width: 250px;
+                border: 1px solid #cccccc;
+            }
+            .visor{
+                margin: 10px;
+                width: 92.6%;
+                padding: 2px;
+                border: navajowhite;
+            }
+            .num{
+                background: #fff;
+                margin-left: 10px;
+                margin-top: 10px;
+                padding: 12px;
+                width: 27%;
+                }
+            .op{
+                background: #f1eaea;
+                padding: 15.7px;
+                color: #f00;
+            }
+            .resultado{
+                margin: 8px 2px -2px 10px;
+                width: 66px;
+                margin-bottom: 10px;
+            }
+            .calculadora{
+                background: #007FFF;
+            }
+            input:hover{
+                background: #8c8484;
+            }
+        </style> 
+
+        
+    </head>
+    <body>
+        <div>
+            <form method="post" action="index.html">
+                <input type="text" readonly value="0" class="visor" name="visor">
+                <input type="button" class="num" value="1">
+                <input type="button" class="num" value="2">
+                <input type="button" class="num" value="3">
+                <input type="button" class="num" value="4">
+                <input type="button" class="num" value="5">
+                <input type="button" class="num" value="6">
+                <input type="button" class="num" value="7">
+                <input type="button" class="num" value="8">
+                <input type="button" class="num" value="9">
+                <input type="button" class="num" value="0">
+
+                <input type="button" class="op somar" value="+">
+                <input type="button" class="op dividir" value="/">
+                
+                <input type="button" class="op multiplicar" value="*">
+                <input type="button" class="op subtrair" value="-">
+                <input type="button" class="resultado" value="=">
+                
+            </form>
+        </div>
+    </body>
+</html>

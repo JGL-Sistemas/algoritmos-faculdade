@@ -1,0 +1,85 @@
+/* =========== css reset ========== */
+* {margin: 0; padding: 0; font-size: 100%; border: none; outline: none; font-weight: 300; box-sizing: border-box;
+font-family: 'Lato', sans-serif;}
+body {background-color: #f5f5f5;}
+a {text-decoration: none;}
+ul {list-style: none;}
+img {max-width: 100%;}
+
+/* =========== conteiner ========== */
+.container {width: 100%; float: left; padding: 1.5% 1.5%; text-align: center;}
+.container-produto{width: 80% !important; margin-left: 10%; margin-right: 10%;  }
+
+/* =========== cores ========== */
+.bg {background:#078F3E;}
+.bg-black {background-color: #130400; }
+.bg-white {background-color: #fff;}
+.bgp p{color: #4a4a4a; }
+.bgp {color: #4a4a4a !important; }
+ hr{background:#4a4a4a; width: 100%; height: 1px;}
+ .image-produto{ float: left; margin-right: 1%;}
+ .container-produto h3{ color: #30cc6f !important; }
+
+/* =========== bordas ========== */
+.radius {border-radius: 7px;}
+
+/* cabeçalho */
+.logo {width: 56px; height: 56px; float: left; background: url(../img/logo-mobile.png) center center/56px no-repeat;
+font-size: 0;}
+
+/* menu principal */
+.menu {display:none; width: 100%; height: 100%; position: fixed; background-color: rgba(0,0,0,0.9); top: 0; left: 0;}
+.menu ul {width: 100%; float: left; text-align: center;}
+.menu li {padding: 1.5%;}
+.menu li a {font-size: 2em; color: #fff; padding: 1.5% 3%;}
+.menu li a:hover {border:1px solid #da6709;}
+
+/* banner de destasque */
+.banner {background: url(../img/bg.jpg) no-repeat fixed;}
+.title {width: 100%;}
+.title h2 {font-size: 2.5em; color: #078F3E; font-weight: 700;}
+.title h3 {font-size: 1.5em; color: #fff;}
+
+
+/* Produtos da agricultura */
+.produto {width: 100%;  text-align: left;  margin-bottom: 3%;}
+.produto img {border-radius: 7px 7px 0 0;}
+.inner {padding: 7%;}
+.inner a {font-size: 1.5em; color: #130400; font-weight: 700; }
+.inner h4 {font-size: 1.2em; color: #130400; margin-top: 2%; }
+.inner p {margin-top: 6%; color: #130400; line-height: 1.5em;}
+.copyright {color: rgba(255, 255, 255, 0.7); margin-top:2%;}
+
+/* ========== responsivo para celular e tablets ==========*/
+
+/* Celular */
+@media screen and (min-width: 480px) {
+.logo {width: 214px; background: url(../img/logo.png) center center/214px no-repeat;}
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+.produto {width: 49%; float: left; margin-left: 3%;}
+.produto:nth-child(2){margin-right: 0;}
+}
+
+/* tablet e computadores */
+@media screen and (min-width: 960px) {
+.title {width: 70%; float: left; text-align: left;}
+.title h2 {font-size: 3em;}
+.title h3 {font-size: 2em;}
+.produto {width: 13%; }
+
+}
+
+/* outros tamanhos */
+@media screen and (min-width: 1280px) {
+.menu {width: auto; height: 56px; line-height: 56px; float: right; background-color: #f5f5f5; 
+display: block !important; position: static;}
+.menu li {padding: 0; float: left;}
+.menu li a {color:#130400; font-size: 1em; padding: 15px; }
+.menu li a:hover {border: none; color:#da6709; }
+}
+
+
+

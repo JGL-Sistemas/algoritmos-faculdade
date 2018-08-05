@@ -1,0 +1,26 @@
+
+p{
+	font-size:30px;
+	color:#cccccc;
+	font-weight: bold;
+	background:#000;
+	border-radius: 6px;
+	float: left;
+	margin-right: 2px; 
+}
+p:hover{
+	background: #cccccc;
+	color: #000;
+}
+.pequena{
+	float: left;
+	width: 20%;
+}
+.media{
+	float: left;
+	width: 30%;
+}
+.grande{
+	float:left;
+	width: 40%
+}
