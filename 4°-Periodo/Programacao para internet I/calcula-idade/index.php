@@ -23,7 +23,6 @@
 			echo "Voce tem ".calculaIdade($anonacimento)." anos de idade";
 		}
 
-
 	?>
 
 </body>
