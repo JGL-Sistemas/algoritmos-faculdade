@@ -14,10 +14,8 @@ o IMC de uma pessoa
 		Peso: <input type="text" name="peso"><br>
 		altura: <input type="text" name="altura"><br>
 		Sexo:
-		<select>
-			<option>M</option>
-			<option>F</option>
-		</select><br>
+		M<input type="checkbox" name="sexo" value="m">
+		F<input type="checkbox" name="sexo" value="f">
 		<input type="submit"  value="enviar">
 	</form>
 	
@@ -60,7 +58,9 @@ if( isset($_POST["peso"]) ){
 //declara variavel com peso e altura 
 	$peso 	= $_POST["peso"];
 	$altura = $_POST["altura"];
-	$sexo   = 1;
+	$sexo   = $_POST["sexo"];
+
+	echo $sexo;
 	//pega retorno da função e atribui para a variavel 
 	$resultado = calcula_imc($peso, $altura); 
 	//imprime valor atribuido a variavel

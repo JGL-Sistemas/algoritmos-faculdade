@@ -10,7 +10,6 @@ desenvolva um modelo de dados que atenda a necessidades
 
 */
 
-
 CREATE DATABASE sis_academico;
 
 USE sis_academico;
