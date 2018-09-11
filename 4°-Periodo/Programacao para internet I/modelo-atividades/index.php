@@ -23,6 +23,7 @@
     		border: 1px #e2e2e2 solid;
     		background: #eaeaea;
     		color: #6d6262;
+    		margin-top:1%;	
    		 }
    		 .descricao-input{
    		 	color: #6d6262;
@@ -57,6 +58,9 @@
     		background: #d0d0d0;
     		border: none;
    		}
+   		ul{
+   		list-style-type: none;
+   		}
 	</style>
 
 	<!-- interação -->
@@ -78,10 +82,19 @@ descrição da atividade
 <!-- corpo da pagina -->
 <body>
 
+	<div class="container-medio caixa">
+		<ul>
+			<li>Autor: Dieisson Martins</li>
+			<li>Turma: Sistemas 4°-Periodo</li>
+			<li>Data: 11/09/2018</li>
+			<li>Diciplina: Programação para Web I</li>
+		</ul>
+	</div>
+	
 	<div class="container-largo caixa">
 		<p>fineza deixar mensagem no portal que a reunião da Câmara Municipal será excepcionalmente realizada nesta quinta -feira com a seguinte pauta:</p>
 	</div>
-
+ 
 	<div class="container-pequeno">
 		<form method="POST">
 			
