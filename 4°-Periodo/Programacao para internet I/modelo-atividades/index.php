@@ -24,6 +24,12 @@
     		background: #eaeaea;
     		color: #6d6262;
    		 }
+   		 .descricao-input{
+   		 	color: #6d6262;
+   			margin-left: 5px;
+    		margin-top: 14px;
+    		font-size: 25px;
+   		 }
    		form{
    			width: 100%;
    		}
@@ -40,6 +46,16 @@
     		color: #fff;
     		font-weight: bold;
     		width: 105.8%;
+   		}
+   		input[type="submit"]:hover{
+   			background: #e88f8f;
+   		}
+   		hr{
+   			margin-left: 4PX;
+    		width: 105.4%;
+    		height: 1px;
+    		background: #d0d0d0;
+    		border: none;
    		}
 	</style>
 
@@ -66,10 +82,15 @@ descrição da atividade
 		<p>fineza deixar mensagem no portal que a reunião da Câmara Municipal será excepcionalmente realizada nesta quinta -feira com a seguinte pauta:</p>
 	</div>
 
-
 	<div class="container-pequeno">
 		<form method="POST">
-			<input type="text" name="texto" placeholder="digite texto">
+			
+			<span class="descricao-input">texto</span><br>
+			<input type="text" name="texto" placeholder="digite texto"><hr>
+
+			<span class="descricao-input">texto</span><br>
+			<input type="text" name="texto" placeholder="digite texto"><hr>
+
 			<input type="submit" value="Enviar">
 		</form>
 	</div>
