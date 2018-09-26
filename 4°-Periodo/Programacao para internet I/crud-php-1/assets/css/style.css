@@ -8,12 +8,12 @@
 	margin: 0 auto;
 }
 .container-grande{
-	width: 800px;
+	width: 900px;
 	margin: 0 auto;
 }
 
 /* estilo dos formularios*/
-input[type=date],input[type=text], select {
+input[type=date],input[type=text],input[type=number], select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
