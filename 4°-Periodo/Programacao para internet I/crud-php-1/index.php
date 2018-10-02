@@ -43,7 +43,7 @@
 		<table>
 		  <tr>
 		    <th>Nome</th>
-		    <th>Matricula</th>
+		    <th>CPF</th>
 		    <th>Identidade</th>
 		    <th>Nacimento</th>
 		    <th>Editar</th>
