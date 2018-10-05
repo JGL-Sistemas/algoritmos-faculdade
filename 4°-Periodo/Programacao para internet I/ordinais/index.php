@@ -3,6 +3,7 @@
 function numerosOrdinais($valor){
 
 	$ordinais = array(
+		'0' 	=> '',
 		'1' 	=> 'primeiro',
 		'2' 	=> 'segundo',
 		'3' 	=> 'terceiro',
@@ -43,12 +44,6 @@ function numerosOrdinais($valor){
 	$centena 	= substr($valor, 1, 1) * 100; 
 	$milhar		= substr($valor, 0, 1) * 1000;
 
-/*
-echo "</br>".$unidade ;  
-echo "</br>".$dezena  ;  
-echo "</br>".$centena ;  
-echo "</br>".$milhar  ; 
-*/
 
 foreach ($ordinais as $numerico => $ordinal) {
 	 ($centena == $numerico ) ? $centena = $ordinal :'';
@@ -56,13 +51,15 @@ foreach ($ordinais as $numerico => $ordinal) {
 	 ($unidade == $numerico ) ? $unidade = $ordinal :'';
 	 ($milhar  == $numerico ) ? $milhar  = $ordinal :'';
 
+}
 	echo "{$milhar} {$centena} {$dezena} {$unidade} </br>";
-}
 
 }
 
 
-numerosOrdinais(1243);
+numerosOrdinais(2100);
+
+numerosOrdinais(1234);
 
 
  ?>
