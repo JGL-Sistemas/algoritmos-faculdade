@@ -45,17 +45,16 @@ function numerosOrdinais($valor){
 
 	if($valor <= 9){
 		$unidadeValor = substr($valor, 0, 1) * 1;
+		
 		foreach($unidades as $numericoUnidade => $unidade) {
-			$numericoUnidade." ".$unidade."<br>";
 			 ($unidadeValor == $numericoUnidade) ? $unidadeValor = $unidade :'';
 		}		
 		echo "{$unidadeValor}";
 		return;
 
 	}else if($valor <= 99){
-		
-		echo "</br>".$unidadeValor = substr($valor, 1, 1) * 1;    
-		echo "</br>".$dezenaValor  = substr($valor, 0, 1) * 10;
+		$unidadeValor = substr($valor, 1, 1) * 1;    
+		$dezenaValor  = substr($valor, 0, 1) * 10;
 
 		foreach($unidades as $numericoUnidade => $unidade) {
 			 ($unidadeValor == $numericoUnidade) ? $unidadeValor = $unidade :'';
@@ -67,21 +66,17 @@ function numerosOrdinais($valor){
 		return;
 	
 	}else if($valor <= 999){
-		
-		echo $unidadeValor = substr($valor, 2, 1) * 1;    
-		echo "</br>".$dezenaValor  = substr($valor, 1, 1) * 10;
-		echo "</br>".$centenaValor = substr($valor, 0, 1) * 100; 
+		$unidadeValor = substr($valor, 2, 1) * 1;    
+		$dezenaValor  = substr($valor, 1, 1) * 10;
+		$centenaValor = substr($valor, 0, 1) * 100; 
 
 		foreach($unidades as $numericoUnidade => $unidade) {
-			echo "<br>".$numericoUnidade." ".$unidade."<br>";
 			 ($unidadeValor == $numericoUnidade) ? $unidadeValor = $unidade :'';
 		}
 		foreach($dezenas as $numericoDezena => $dezena) {
-			echo $numericoDezena." ".$dezena."<br>";
 			 ($dezenaValor == $numericoDezena) ? $dezenaValor = $dezena :'';
 		}
 		foreach($centenas as $numericoCentena => $centena) {
-			echo $numericoCentena." ".$centena."<br>";
 			 ($centenaValor == $numericoCentena) ? $centenaValor = $centena :'';
 		}
 		echo "{$centenaValor} {$dezenaValor} {$unidadeValor}";
