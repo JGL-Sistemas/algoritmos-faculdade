@@ -20,3 +20,9 @@ create view selecionaMatriculados
 	from aluno
 	where matricula = 13243;
 
+
+--usar view 1
+select nome, idade from selecionaNomes;
+
+--usar view 2
+select nome, matricula from selecionaMatriculados; 
