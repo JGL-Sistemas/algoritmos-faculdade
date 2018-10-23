@@ -5,8 +5,7 @@ session_start();
 $login = $_POST['login'];
 $senha = $_POST['senha'];
 // as próximas 3 linhas são responsáveis em se conectar com o bando de dados.
-$con = mysql_connect("127.0.0.1", "root", "digite a senha do banco aqui") or die
- ("Sem conexão com o servidor");
+$con = mysql_connect("127.0.0.1", "root", "digite a senha do banco aqui") or die("Sem conexão com o servidor");
 $select = mysql_select_db("server") or die("Sem acesso ao DB, Entre em 
 contato com o Administrador, gilson_sales@bytecode.com.br");
  
