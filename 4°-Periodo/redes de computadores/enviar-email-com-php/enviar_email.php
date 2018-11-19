@@ -17,16 +17,16 @@
 	$Mailer->SMTPSecure = 'ssl';
 	
 	//nome do servidor
-	$Mailer->Host = 'nome-do-servidor';
+	$Mailer->Host = 'br818.hostgator.com.br';
 	//Porta de saida de e-mail 
 	$Mailer->Port = 465;
 	
 	//Dados do e-mail de saida - autenticação
-	$Mailer->Username = 'dieisson.martins.santos@.gmail.com';
-	$Mailer->Password = 'dieisson1998email';
+	$Mailer->Username = 'origem@dieissonmartins.com.br';
+	$Mailer->Password = 'origem';
 	
 	//E-mail remetente (deve ser o mesmo de quem fez a autenticação)
-	$Mailer->From = 'dieisson.martins.santos@.gmail.com';
+	$Mailer->From = 'origem@dieissonmartins.com.br';
 	
 	//Nome do Remetente
 	$Mailer->FromName = 'Dieisson Martins';
@@ -41,7 +41,7 @@
 	$Mailer->AltBody = 'conteudo do E-mail em texto';
 	
 	//Destinatario 
-	$Mailer->AddAddress('dieisson@rkminformatica.com.com');
+	$Mailer->AddAddress('destino@dieissonmartins.com.br');
 	
 	if($Mailer->Send()){
 		echo "E-mail enviado com sucesso";
