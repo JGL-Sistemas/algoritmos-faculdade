@@ -1,9 +1,14 @@
 <?php
 
-echo "teste";
-
-echo $_POST['email-origem'];
-
+$_POST['email-origem'];
+$_POST['senha-origem'];
+$_POST['email-destino'];
+$_POST['pessoa-destino'];
+$_POST['titulo-destino'];
+$_POST['conteudo-destino'];
+$_POST['conteudo-corpo-destino'];
+$_POST['servidor-origem'];
+$_POST['email-destino'];
 
 
 require 'PHPMailer/PHPMailerAutoload.php';
