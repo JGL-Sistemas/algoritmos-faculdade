@@ -2,6 +2,10 @@
 
 echo "teste";
 
+echo $_POST['email-origem'];
+
+
+
 require 'PHPMailer/PHPMailerAutoload.php';
 
 $Mailer = new PHPMailer();

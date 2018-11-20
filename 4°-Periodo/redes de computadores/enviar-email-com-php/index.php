@@ -13,7 +13,7 @@
 		</br>
   		<h2>SMTP demonstração</h2>
 		<p>O SMTP é usado quando o e-mail é enviado de um cliente de e-mail, como o Outlook, ThunderBird ou Mail, para um servidor de e-mail ou quando o e-mail é enviado de um servidor de e-mail para outro. POP3 significa Post Office Protocol.</p><hr>
-  <form action="enviar_email.php">
+  <form action="enviar_email.php" method="POST">
     <div class="form-group">
       <label for="email">Email de Origem:</label>
       <input type="email" class="form-control" name="email-origem" value="origem@dieissonmartins.com.br">
@@ -57,5 +57,8 @@
   </form>
 </div>
 
+<div class="container">
+	<?php var_dump( $_SERVER ); ?>
+</div>
 </body>
 </html>

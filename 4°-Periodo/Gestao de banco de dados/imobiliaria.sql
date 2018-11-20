@@ -611,3 +611,14 @@ ALTER TABLE `valor`
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
+SELECT * FROM `cliente` WHERE sexo_cliente LIKE '%feminino%';
+
+SELECT cliente.nome_cliente FROM cliente, cliente_imobiliaria WHERE cliente.CPF_cliente = cliente_imobiliaria.cpf_propri;
+
+SELECT * FROM cliente
+WHERE estado_civil_cliente IN ('viuvo', 'casado') and sexo_cliente LIKE '%masculino%';
+
+SELECT sum(salario_cargo), count(*) FROM cargos_imobiliaria;
+
