@@ -1,16 +1,5 @@
 <?php
 
-$_POST['email-origem'];
-$_POST['senha-origem'];
-$_POST['email-destino'];
-$_POST['pessoa-destino'];
-$_POST['titulo-destino'];
-$_POST['conteudo-destino'];
-$_POST['conteudo-corpo-destino'];
-$_POST['servidor-origem'];
-$_POST['email-destino'];
-
-
 require 'PHPMailer/PHPMailerAutoload.php';
 
 $Mailer = new PHPMailer();
@@ -29,32 +18,32 @@ $Mailer->SMTPAuth = true;
 $Mailer->SMTPSecure = 'ssl';
 
 //nome do servidor
-$Mailer->Host = 'br818.hostgator.com.br';
+$Mailer->Host = $_POST['servidor-origem'];
 
 //Porta de saida de e-mail 
 $Mailer->Port = 465;
 
 //Dados do e-mail de saida - autenticação
-$Mailer->Username = 'origem@dieissonmartins.com.br';
-$Mailer->Password = 'origem';
+$Mailer->Username = $_POST['email-origem'];
+$Mailer->Password = $_POST['senha-origem'];
 
 //E-mail remetente (deve ser o mesmo de quem fez a autenticação)
-$Mailer->From = 'origem@dieissonmartins.com.br';
+$Mailer->From = $_POST['email-origem'];
 
 //Nome do Remetente
-$Mailer->FromName = 'Dieisson Martins';
+$Mailer->FromName = $_POST['pessoa-destino'];
 
 //Assunto da mensagem
-$Mailer->Subject = 'Titulo - Recuperar Senha';
+$Mailer->Subject = $_POST['titulo-destino'];
 
 //Corpo da Mensagem
-$Mailer->Body = 'Conteudo do E-mail';
+$Mailer->Body = $_POST['conteudo-destino'];
 
 //Corpo da mensagem em texto
-$Mailer->AltBody = 'conteudo do E-mail em texto';
+$Mailer->AltBody = $_POST['conteudo-corpo-destino'];
 
 //Destinatario 
-$Mailer->AddAddress('destino@dieissonmartins.com.br');
+$Mailer->AddAddress($_POST['email-destino']);
 
 if($Mailer->Send()){
 	echo "E-mail enviado com sucesso";
