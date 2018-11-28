@@ -3,54 +3,37 @@
 class Curso{
 
     //atributos
-    private $codigo;
-    private $nome;
-    private $categoria;
+    private $codigo = array();
+    private $nome   = array();
+    private $id;
     
-    //metodos
-    public function setTurma(array $turma){
-        $this->codigo = $turma['codigo'];
-        $this->nome = $turma['nome'];
-        $this->categoria = $turma['categoria'];
-    }
-    
-    public function getCodigo(){
-        return $this->codigo;
+    public function setTurma(array $turmas,$i){
+        $this->id = $i;
+        $this->codigo[$this->id] = $turmas[$this->id]['codigo']; 
+        $this->nome[$this->id] = $turmas[$this->id]['nome']; 
     }
     public function getNome(){
-        return $this->nome;
-    }
-    public function getCategoria(){
-        return $this->categoria;
-    }
+        return $this->nome[$this->id];
+    } 
 }
 
-$turma1 = new Curso;
+$turma = new Curso;
 
-$arrayturma = array(
-    'codigo'=>'32',
-    'nome'=>'Sistemas de Informação',
-    'categoria'=>'Exatas'
-);
-//var_dump($turma1);
-
-$turma1->setTurma($arrayturma);
-    echo $turma1->getNome();
-    echo '</br>';
-    echo $turma1->getCategoria();
-    echo '</br>';
-    echo $turma1->getCodigo();
-    echo '</br>';
-
-$turma2 = new Curso;
-
-$vetor = array(
- 'codigo'=>'33',
- 'nome'=>'engenharia',
- 'categoria'=>'exatas'
+$turmas = array(
+    array('codigo'=>'1','nome'=>'Sistemas de Informação </br>'),
+    array('codigo'=>'2','nome'=>'Direito </br>'),
+    array('codigo'=>'3','nome'=>'Pedagogia </br>'),
+    array('codigo'=>'4','nome'=>'Pedagogia2 </br>'),
 );
 
-$turma2->setTurma($vetor);
-    echo $turma2->getNome()."<br>";
-    echo $turma2->getCategoria()."<br>";
-    echo $turma2->getCodigo();
+$qtd = count($turmas);
+
+
+for($i=0; $i<$qtd; $i++){ 
+    $turma->setTurma($turmas,$i);
+
+   // echo $turma->getCodigo();
+   echo $turma->getNome();
+}
+
+
