@@ -29,7 +29,7 @@ class Curso{
     }
     public function excluir($id){
         for ($i=0; $i <count($this->codigo); $i++){
-            if($id == $i){
+            if($id == $this->codigo[$i]){
                  $this->codigo[$i] = NULL;
                  $this->nome[$i] = NULL;
              }
