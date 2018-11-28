@@ -34,6 +34,14 @@ class Curso{
                  $this->nome[$i] = NULL;
              }
         }
+    }
+    public function editar($id,$novonome){
+        for ($i=0; $i <count($this->codigo); $i++){
+            if($id == $this->codigo[$i]){
+                 $this->codigo[$i] = $this->codigo[$i];
+                 $this->nome[$i] = $novonome;
+             }
+        }
     } 
 }
 $turma = new Curso;
@@ -60,7 +68,7 @@ for($i=0; $i<$qtd; $i++){
 
 $turma->excluir(1);
 $turma->excluir(12);
-
+$turma->editar(3,'dieisson');
 
 
 $turma->mostrar();
