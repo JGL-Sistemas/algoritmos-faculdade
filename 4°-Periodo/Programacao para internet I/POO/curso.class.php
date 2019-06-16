@@ -68,7 +68,9 @@ for($i=0; $i<$qtd; $i++){
 
 $turma->excluir(1);
 $turma->excluir(12);
-$turma->editar(3,'dieisson');
+
+$turma->editar(3,'Esquerdo');
+$turma->editar(9,'Engenharia de Samuel');
 
 
 $turma->mostrar();
